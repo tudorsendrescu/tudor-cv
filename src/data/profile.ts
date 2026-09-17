@@ -1,0 +1,123 @@
+// Placeholder content. Replace each "coming soon" entry with real details.
+
+export const profile = {
+  name: "Tudor Sendrescu",
+  title: "Cybersecurity & Software Development",
+  tagline:
+    "I build and secure software — bridging development skills with a growing focus on cybersecurity.",
+  location: "Coming soon",
+  email: "your-email@example.com",
+  resumeUrl: "", // add the hosted PDF path/URL here once ready, e.g. "/resume.pdf"
+  social: [
+    { label: "GitHub", href: "https://github.com/tudorsendrescu", icon: "github" },
+    { label: "LinkedIn", href: "#", icon: "linkedin" },
+    { label: "Email", href: "mailto:your-email@example.com", icon: "mail" },
+  ],
+};
+
+export const navLinks = [
+  { id: "about", label: "About" },
+  { id: "experience", label: "Experience" },
+  { id: "education", label: "Education" },
+  { id: "skills", label: "Skills" },
+  { id: "certifications", label: "Certifications" },
+  { id: "projects", label: "Projects" },
+  { id: "contact", label: "Contact" },
+];
+
+export const about = {
+  paragraphs: [
+    "Content coming soon — a short personal profile covering your background, what drew you to cybersecurity, and your interests outside of work.",
+  ],
+  interests: ["Content coming soon"],
+};
+
+export type ExperienceEntry = {
+  role: string;
+  company: string;
+  companyUrl?: string;
+  period: string;
+  summary: string;
+  highlights: string[];
+  tags: string[];
+};
+
+export const experience: ExperienceEntry[] = [
+  {
+    role: "Role title — coming soon",
+    company: "Company name",
+    period: "Start — End",
+    summary: "Content coming soon.",
+    highlights: ["Content coming soon"],
+    tags: ["Tag"],
+  },
+];
+
+export type EducationEntry = {
+  degree: string;
+  institution: string;
+  period: string;
+  details: string;
+};
+
+export const education: EducationEntry[] = [
+  {
+    degree: "Degree / Program — coming soon",
+    institution: "Institution name",
+    period: "Start — End",
+    details: "Content coming soon.",
+  },
+];
+
+export type SkillGroup = {
+  category: string;
+  skills: string[];
+};
+
+export const skills: { cybersecurity: SkillGroup[]; development: SkillGroup[] } = {
+  cybersecurity: [
+    { category: "Security Fundamentals", skills: ["Content coming soon"] },
+    { category: "Tools & Platforms", skills: ["Content coming soon"] },
+  ],
+  development: [
+    { category: "Languages", skills: ["Content coming soon"] },
+    { category: "Frameworks & Tools", skills: ["Content coming soon"] },
+  ],
+};
+
+export type Certification = {
+  name: string;
+  issuer: string;
+  date: string;
+  status: "planned" | "in-progress" | "completed";
+};
+
+export const certifications: Certification[] = [
+  {
+    name: "Certification name — coming soon",
+    issuer: "Issuing organization",
+    date: "Expected / obtained date",
+    status: "planned",
+  },
+];
+
+export type Project = {
+  title: string;
+  description: string;
+  tags: string[];
+  href?: string;
+  repoHref?: string;
+};
+
+export const projects: Project[] = [
+  {
+    title: "Project name — coming soon",
+    description: "Content coming soon.",
+    tags: ["Tag"],
+  },
+  {
+    title: "Project name — coming soon",
+    description: "Content coming soon.",
+    tags: ["Tag"],
+  },
+];
