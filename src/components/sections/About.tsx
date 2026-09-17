@@ -20,7 +20,7 @@ export default function About() {
             Interests
           </h3>
           <ul className="flex flex-wrap gap-2">
-            {about.interests.map((interest, i) => (
+            {about.hobbies.map((interest, i) => (
               <li
                 key={i}
                 className="px-3 py-1 rounded-full border border-white/10 text-xs text-slate italic"
