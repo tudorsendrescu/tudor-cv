@@ -5,12 +5,11 @@ export const profile = {
   title: "Cybersecurity & Software Development",
   tagline:
     "I build and secure software — bridging development skills with a growing focus on cybersecurity.",
-  location: "Coming soon",
   email: "vladsitudor@gmail.com",
   resumeUrl: "", // add the hosted PDF path/URL here once ready, e.g. "/resume.pdf"
   social: [
     { label: "GitHub", href: "https://github.com/tudorsendrescu", icon: "github" },
-    { label: "LinkedIn", href: "#", icon: "linkedin" },
+    { label: "LinkedIn", href: "https://www.linkedin.com/in/tudor-gabriel-șendrescu-ab0021389/", icon: "linkedin" },
     { label: "Email", href: "mailto:vladsitudor@gmail.com", icon: "mail" },
   ],
 };
