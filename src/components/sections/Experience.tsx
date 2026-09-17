@@ -27,7 +27,15 @@ export default function Experience() {
                   )}
                 </span>
               </h3>
-              <p className="mt-2 text-sm italic text-slate/70">{entry.summary}</p>
+              <p
+                className={`mt-2 text-sm ${
+                  entry.summary.startsWith("Content coming soon")
+                    ? "italic text-slate/70"
+                    : "text-slate leading-relaxed"
+                }`}
+              >
+                {entry.summary}
+              </p>
               {entry.highlights.length > 0 && (
                 <ul className="mt-3 space-y-2">
                   {entry.highlights.map((h, hi) => (

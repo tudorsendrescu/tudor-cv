@@ -6,12 +6,12 @@ export const profile = {
   tagline:
     "I build and secure software — bridging development skills with a growing focus on cybersecurity.",
   location: "Coming soon",
-  email: "your-email@example.com",
+  email: "vladsitudor@gmail.com",
   resumeUrl: "", // add the hosted PDF path/URL here once ready, e.g. "/resume.pdf"
   social: [
     { label: "GitHub", href: "https://github.com/tudorsendrescu", icon: "github" },
     { label: "LinkedIn", href: "#", icon: "linkedin" },
-    { label: "Email", href: "mailto:your-email@example.com", icon: "mail" },
+    { label: "Email", href: "mailto:vladsitudor@gmail.com", icon: "mail" },
   ],
 };
 
@@ -28,7 +28,7 @@ export const navLinks = [
 export const about = {
   paragraphs: [
     "Hi there! I'm Tudor, and I'm drawn to the space where building software and breaking it meet. I'm a second-year Automatică și Calculatoare (AIASI) student at Universitatea Politehnica din București, and I care about writing clean, full-stack software while increasingly pulling that focus toward security — understanding how systems fail is what makes me a better engineer.",
-    "I hold the HTB Certified Junior Cybersecurity Associate (CJCA) certification from Hack The Box, a fully hands-on exam with no multiple choice: real penetration testing against an enterprise-style network, SIEM-assisted log analysis in Elastic, and a commercial-grade report at the end. Day to day, that means working with tools like Nmap, Wireshark, and the ELK stack, and I keep building on it through labs and CTFs.",
+    "I hold the HTB Certified Junior Cybersecurity Associate (CJCA) certification from Hack The Box, a fully hands-on exam with no multiple choice: real penetration testing against an enterprise-style network, SIEM-assisted log analysis in Elastic, and a commercial-grade report at the end. Day to day, that means working with tools like Nmap, Wireshark, and the ELK stack, and I keep building on it through labs and CTFs. My development background feeds directly into this: reading and reasoning about code at an engineering level makes me particularly effective at white-box testing, on top of the black-box and grey-box work most security testing involves.",
     "On the development side, I try to keep that same full-stack range — this site is my own build, and I got hands-on backend and frontend experience volunteering with the IT department of LSAC Bucharest during university.",
     "Away from the screen, I train martial arts (currently Iaido), play piano, draw, and read whenever I get the chance.",
   ],
@@ -47,12 +47,18 @@ export type ExperienceEntry = {
 
 export const experience: ExperienceEntry[] = [
   {
-    role: "Role title — coming soon",
-    company: "Company name",
-    period: "Start — End",
-    summary: "Content coming soon.",
-    highlights: ["Content coming soon"],
-    tags: ["Tag"],
+    role: "Full-Stack Developer, IT Department",
+    company: "LSAC Bucharest",
+    period: "Oct 2025 — Jun 2026",
+    summary:
+      "Contributed across the stack on the department's internal meeting-scheduling platform (Node.js/Express, Prisma/MySQL, React), owning features end to end from system design through implementation.",
+    highlights: [
+      "Designed and shipped a decoupled approval system for meetings with 15+ invitees, replacing a hardcoded boolean flag with a generic, auditable ApprovalRequest table — weighing a database-backed queue against an in-memory/Redis approach and choosing the former for reliability, history, and extensibility.",
+      "Built the approval API (role-gated, Zod-validated list/resolve endpoints) and integrated it into the invite flow, so requests above the threshold return HTTP 202 and resolve through a generic action dispatcher — extensible to new approval types without touching the schema.",
+      "Diagnosed and fixed a fully disconnected meeting-creation feature end to end: mismatched API routes and field names between frontend and backend, a missing database column, and invite selections being silently dropped — replacing a silent failure with real error messages in the UI.",
+      "Identified and documented a seeder bug blocking a required permission for new project setups, unblocking future contributors.",
+    ],
+    tags: ["TypeScript", "Node.js", "Prisma", "MySQL", "React", "REST APIs", "System Design"],
   },
 ];
 
@@ -84,6 +90,7 @@ export const skills: { cybersecurity: SkillGroup[]; development: SkillGroup[] } 
       category: "Security Fundamentals",
       skills: [
         "Penetration Testing",
+        "White/Grey/Black-Box Testing",
         "Vulnerability Assessment",
         "Network Traffic Analysis",
         "Windows & Linux Privilege Escalation",
