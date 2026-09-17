@@ -115,6 +115,7 @@ export type Certification = {
   status: "planned" | "in-progress" | "completed";
   credentialId?: string;
   href?: string;
+  pdfHref?: string;
 };
 
 export const certifications: Certification[] = [
@@ -125,6 +126,7 @@ export const certifications: Certification[] = [
     status: "completed",
     credentialId: "HTBCERT-77C3CFF375",
     href: "https://profile.hackthebox.com/profile/019f3b33-79d3-73e2-b2ee-1a9fbdea941b",
+    pdfHref: "/certificates/htb-cjca-certificate.pdf",
   },
   {
     name: "Certificate in Advanced English (CAE) — C2",
@@ -133,6 +135,7 @@ export const certifications: Certification[] = [
     status: "completed",
     credentialId: "C6296037",
     href: "https://cambridgeenglish.org/verifiers",
+    pdfHref: "/certificates/cambridge-cae-certificate.pdf",
   },
 ];
 

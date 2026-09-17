@@ -1,4 +1,4 @@
-import { Award, ExternalLink } from "lucide-react";
+import { Award, ExternalLink, FileText } from "lucide-react";
 import { certifications } from "../../data/profile";
 import SectionHeading from "../SectionHeading";
 import Reveal from "../Reveal";
@@ -56,6 +56,16 @@ export default function Certifications() {
                       className="inline-flex items-center gap-1 text-xs text-accent hover:underline focus-accent"
                     >
                       View credential <ExternalLink size={12} />
+                    </a>
+                  )}
+                  {cert.pdfHref && (
+                    <a
+                      href={cert.pdfHref}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="inline-flex items-center gap-1 text-xs text-slate-light border border-white/10 rounded-full px-2.5 py-1 hover:border-accent/40 hover:text-accent transition-colors focus-accent"
+                    >
+                      <FileText size={12} /> View PDF
                     </a>
                   )}
                 </div>
