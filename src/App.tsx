@@ -13,17 +13,19 @@ function App() {
   return (
     <div className="relative min-h-screen bg-navy">
       <CursorGlow />
-      <Sidebar />
-      <main className="lg:ml-[380px] lg:pl-16 xl:pl-24 px-6 lg:pr-24 max-w-3xl">
-        <About />
-        <Experience />
-        <Education />
-        <Skills />
-        <Certifications />
-        <Projects />
-        <Contact />
-        <Footer />
-      </main>
+      <div className="mx-auto max-w-[1500px] lg:flex lg:items-start lg:gap-8 xl:gap-16">
+        <Sidebar />
+        <main className="px-6 py-16 lg:flex-1 lg:py-24 lg:pr-12 xl:pr-20 max-w-3xl">
+          <About />
+          <Experience />
+          <Education />
+          <Skills />
+          <Certifications />
+          <Projects />
+          <Contact />
+          <Footer />
+        </main>
+      </div>
     </div>
   );
 }

@@ -66,7 +66,7 @@ export default function Sidebar() {
       )}
 
       {/* Desktop fixed sidebar */}
-      <aside className="hidden lg:flex flex-col justify-between fixed top-0 left-0 h-screen w-[380px] px-16 py-24 xl:px-24">
+      <aside className="hidden lg:flex flex-col justify-between lg:sticky lg:top-0 lg:h-screen lg:w-[320px] lg:shrink-0 pl-6 lg:pl-12 xl:pl-16 py-24">
         <div>
           <a href="#about" className="inline-block">
             <h1 className="text-4xl font-bold text-slate-lightest tracking-tight">
