@@ -13,9 +13,9 @@ function App() {
   return (
     <div className="relative min-h-screen bg-navy">
       <CursorGlow />
-      <div className="mx-auto max-w-[1800px] lg:flex lg:items-start lg:gap-8 xl:gap-16">
+      <div className="mx-auto max-w-[1600px] lg:flex lg:justify-center lg:items-start lg:gap-16 xl:gap-24 lg:px-12">
         <Sidebar />
-        <main className="px-6 py-16 lg:flex-1 lg:py-24 lg:pr-8 xl:pr-12 max-w-3xl lg:max-w-4xl xl:max-w-5xl">
+        <main className="px-6 py-16 lg:py-24 w-full max-w-3xl lg:max-w-2xl xl:max-w-3xl">
           <About />
           <Experience />
           <Education />
