@@ -9,7 +9,7 @@ export default function Education() {
         <SectionHeading index="03" title="Education" />
       </Reveal>
 
-      <div className="max-w-xl space-y-8">
+      <div className="max-w-2xl space-y-8">
         {education.map((entry, i) => (
           <Reveal key={i} delay={i * 80}>
             <div className="border border-white/10 rounded-lg p-5 hover:border-accent/30 transition-colors">

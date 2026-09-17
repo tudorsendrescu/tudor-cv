@@ -22,7 +22,7 @@ export default function Certifications() {
         <SectionHeading index="05" title="Certifications" />
       </Reveal>
 
-      <ul className="max-w-xl space-y-4">
+      <ul className="max-w-2xl space-y-4">
         {certifications.map((cert, i) => (
           <Reveal key={i} delay={i * 80}>
             <li className="flex items-start gap-4 border border-white/10 rounded-lg p-5 hover:border-accent/30 transition-colors">

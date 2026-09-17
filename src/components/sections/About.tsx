@@ -7,7 +7,7 @@ export default function About() {
     <section id="about" className="scroll-mt-24 py-16">
       <Reveal>
         <SectionHeading index="01" title="About" />
-        <div className="max-w-xl space-y-4 text-[15px] leading-relaxed">
+        <div className="max-w-2xl space-y-4 text-[15px] leading-relaxed">
           {about.paragraphs.map((p, i) => (
             <p key={i} className={p.startsWith("Content coming soon") ? "italic text-slate/70" : ""}>
               {p}

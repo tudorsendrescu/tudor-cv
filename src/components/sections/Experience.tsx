@@ -9,7 +9,7 @@ export default function Experience() {
         <SectionHeading index="02" title="Experience" />
       </Reveal>
 
-      <ol className="relative border-l border-white/10 max-w-xl">
+      <ol className="relative border-l border-white/10 max-w-2xl">
         {experience.map((entry, i) => (
           <Reveal key={i} delay={i * 80}>
             <li className="relative pl-8 pb-12 last:pb-0">

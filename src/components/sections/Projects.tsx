@@ -11,7 +11,7 @@ export default function Projects() {
         <SectionHeading index="06" title="Projects" />
       </Reveal>
 
-      <div className="grid sm:grid-cols-2 gap-5 max-w-xl">
+      <div className="grid sm:grid-cols-2 gap-5 max-w-2xl">
         {projects.map((project, i) => (
           <Reveal key={i} delay={i * 80}>
             <div className="h-full flex flex-col border border-white/10 rounded-lg p-5 hover:border-accent/30 hover:-translate-y-1 transition-all">
