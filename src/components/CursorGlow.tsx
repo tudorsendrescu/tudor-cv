@@ -54,13 +54,13 @@ export default function CursorGlow() {
       aria-hidden="true"
       className="pointer-events-none fixed left-0 top-0 z-0 opacity-0 transition-opacity duration-500"
       style={{
-        width: 700,
-        height: 700,
-        marginLeft: -350,
-        marginTop: -350,
+        width: 1100,
+        height: 1100,
+        marginLeft: -550,
+        marginTop: -550,
         borderRadius: "9999px",
         background:
-          "radial-gradient(circle, rgba(45,212,191,0.14) 0%, rgba(45,212,191,0.06) 35%, rgba(45,212,191,0) 70%)",
+          "radial-gradient(circle, rgba(56,132,255,0.18) 0%, rgba(56,132,255,0.08) 35%, rgba(56,132,255,0) 70%)",
         willChange: "transform",
       }}
     />
