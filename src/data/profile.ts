@@ -126,6 +126,14 @@ export const certifications: Certification[] = [
     credentialId: "HTBCERT-77C3CFF375",
     href: "https://profile.hackthebox.com/profile/019f3b33-79d3-73e2-b2ee-1a9fbdea941b",
   },
+  {
+    name: "Certificate in Advanced English (CAE) — C2",
+    issuer: "Cambridge University Press & Assessment",
+    date: "14 May 2024",
+    status: "completed",
+    credentialId: "C6296037",
+    href: "https://cambridgeenglish.org/verifiers",
+  },
 ];
 
 export type Project = {
