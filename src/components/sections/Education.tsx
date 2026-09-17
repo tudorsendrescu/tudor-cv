@@ -16,7 +16,15 @@ export default function Education() {
               <p className="font-mono text-xs text-accent mb-1">{entry.period}</p>
               <h3 className="text-slate-lightest font-semibold">{entry.degree}</h3>
               <p className="text-slate-light text-sm mt-0.5">{entry.institution}</p>
-              <p className="mt-2 text-sm italic text-slate/70">{entry.details}</p>
+              <p
+                className={`mt-2 text-sm ${
+                  entry.details.startsWith("Content coming soon")
+                    ? "italic text-slate/70"
+                    : "text-slate leading-relaxed"
+                }`}
+              >
+                {entry.details}
+              </p>
             </div>
           </Reveal>
         ))}

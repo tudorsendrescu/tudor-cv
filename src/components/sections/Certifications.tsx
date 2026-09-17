@@ -1,4 +1,4 @@
-import { Award } from "lucide-react";
+import { Award, ExternalLink } from "lucide-react";
 import { certifications } from "../../data/profile";
 import SectionHeading from "../SectionHeading";
 import Reveal from "../Reveal";
@@ -37,7 +37,28 @@ export default function Certifications() {
                   </span>
                 </div>
                 <p className="text-slate-light text-sm mt-0.5">{cert.issuer}</p>
-                <p className="text-xs text-slate/70 mt-1 italic">{cert.date}</p>
+                <div className="flex flex-wrap items-center gap-3 mt-1">
+                  <p
+                    className={`text-xs ${
+                      cert.date.startsWith("Expected") ? "text-slate/70 italic" : "text-slate"
+                    }`}
+                  >
+                    {cert.date}
+                  </p>
+                  {cert.credentialId && (
+                    <p className="text-xs font-mono text-slate/60">{cert.credentialId}</p>
+                  )}
+                  {cert.href && (
+                    <a
+                      href={cert.href}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="inline-flex items-center gap-1 text-xs text-accent hover:underline focus-accent"
+                    >
+                      View credential <ExternalLink size={12} />
+                    </a>
+                  )}
+                </div>
               </div>
             </li>
           </Reveal>

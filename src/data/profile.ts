@@ -65,10 +65,11 @@ export type EducationEntry = {
 
 export const education: EducationEntry[] = [
   {
-    degree: "Degree / Program — coming soon",
-    institution: "Institution name",
-    period: "Start — End",
-    details: "Content coming soon.",
+    degree: "B.Eng. in Automatică și Calculatoare — AIASI specialization",
+    institution: "Universitatea Politehnica din București (UNSTPB)",
+    period: "Oct 2025 — Present",
+    details:
+      "Completed my first year with a 9.42/10 GPA, earning a merit-based monthly stipend from the university for the result. Currently in my second year.",
   },
 ];
 
@@ -79,12 +80,31 @@ export type SkillGroup = {
 
 export const skills: { cybersecurity: SkillGroup[]; development: SkillGroup[] } = {
   cybersecurity: [
-    { category: "Security Fundamentals", skills: ["Content coming soon"] },
-    { category: "Tools & Platforms", skills: ["Content coming soon"] },
+    {
+      category: "Security Fundamentals",
+      skills: [
+        "Penetration Testing",
+        "Vulnerability Assessment",
+        "Network Traffic Analysis",
+        "Windows & Linux Privilege Escalation",
+        "Web App Security",
+        "SIEM-Assisted Log Analysis",
+      ],
+    },
+    {
+      category: "Tools & Platforms",
+      skills: ["Nmap", "Wireshark", "ELK / Elastic (SIEM)", "Linux", "Hack The Box"],
+    },
   ],
   development: [
-    { category: "Languages", skills: ["Content coming soon"] },
-    { category: "Frameworks & Tools", skills: ["Content coming soon"] },
+    {
+      category: "Languages",
+      skills: ["C", "C++", "TypeScript", "JavaScript", "HTML", "CSS"],
+    },
+    {
+      category: "Frameworks & Tools",
+      skills: ["React", "NestJS", "GraphQL", "Prisma", "PostgreSQL"],
+    },
   ],
 };
 
@@ -93,14 +113,18 @@ export type Certification = {
   issuer: string;
   date: string;
   status: "planned" | "in-progress" | "completed";
+  credentialId?: string;
+  href?: string;
 };
 
 export const certifications: Certification[] = [
   {
-    name: "Certification name — coming soon",
-    issuer: "Issuing organization",
-    date: "Expected / obtained date",
-    status: "planned",
+    name: "HTB Certified Junior Cybersecurity Associate (CJCA)",
+    issuer: "Hack The Box",
+    date: "16 Sep 2026",
+    status: "completed",
+    credentialId: "HTBCERT-77C3CFF375",
+    href: "https://profile.hackthebox.com/profile/019f3b33-79d3-73e2-b2ee-1a9fbdea941b",
   },
 ];
 
