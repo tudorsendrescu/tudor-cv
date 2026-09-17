@@ -49,9 +49,10 @@ export const experience: ExperienceEntry[] = [
   {
     role: "Full-Stack Developer, IT Department",
     company: "LSAC Bucharest",
+    companyUrl: "https://lsacbucuresti.ro",
     period: "Oct 2025 — Jun 2026",
     summary:
-      "Contributed across the stack on the department's internal meeting-scheduling platform (Node.js/Express, Prisma/MySQL, React), owning features end to end from system design through implementation.",
+      "Contributed across the stack on the department's internal meeting-scheduling platform (Node.js, Prisma, React), owning features end to end. Designed a decoupled, auditable approval system to replace a hardcoded permission flag, and diagnosed and fixed a fully disconnected meeting-creation feature.",
     highlights: [
       "Designed and shipped a decoupled approval system for meetings with 15+ invitees, replacing a hardcoded boolean flag with a generic, auditable ApprovalRequest table — weighing a database-backed queue against an in-memory/Redis approach and choosing the former for reliability, history, and extensibility.",
       "Built the approval API (role-gated, Zod-validated list/resolve endpoints) and integrated it into the invite flow, so requests above the threshold return HTTP 202 and resolve through a generic action dispatcher — extensible to new approval types without touching the schema.",
