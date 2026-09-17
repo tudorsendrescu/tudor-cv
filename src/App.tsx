@@ -1,5 +1,6 @@
 import Sidebar from "./components/Sidebar";
 import Footer from "./components/Footer";
+import CursorGlow from "./components/CursorGlow";
 import About from "./components/sections/About";
 import Experience from "./components/sections/Experience";
 import Education from "./components/sections/Education";
@@ -10,7 +11,8 @@ import Contact from "./components/sections/Contact";
 
 function App() {
   return (
-    <div className="min-h-screen bg-navy">
+    <div className="relative min-h-screen bg-navy">
+      <CursorGlow />
       <Sidebar />
       <main className="lg:ml-[380px] lg:pl-16 xl:pl-24 px-6 lg:pr-24 max-w-3xl">
         <About />
