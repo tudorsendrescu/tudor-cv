@@ -7,7 +7,7 @@ export default function Contact() {
   return (
     <section id="contact" className="scroll-mt-24 py-16 pb-32">
       <Reveal>
-        <SectionHeading index="07" title="Contact" />
+        <SectionHeading index="06" title="Contact" />
         <div className="max-w-xl">
           <p className="text-sm leading-relaxed">
             I'm currently exploring opportunities in cybersecurity. Whether

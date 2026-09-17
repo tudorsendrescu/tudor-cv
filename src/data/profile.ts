@@ -15,13 +15,17 @@ export const profile = {
   ],
 };
 
+// Toggle this to show/hide the Projects section site-wide once there's real
+// work to display. The section, its nav link, and its data stay intact.
+export const showProjects = false;
+
 export const navLinks = [
   { id: "about", label: "About" },
   { id: "experience", label: "Experience" },
   { id: "education", label: "Education" },
   { id: "skills", label: "Skills" },
   { id: "certifications", label: "Certifications" },
-  { id: "projects", label: "Projects" },
+  ...(showProjects ? [{ id: "projects", label: "Projects" }] : []),
   { id: "contact", label: "Contact" },
 ];
 

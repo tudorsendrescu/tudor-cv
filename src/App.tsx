@@ -8,6 +8,7 @@ import Skills from "./components/sections/Skills";
 import Certifications from "./components/sections/Certifications";
 import Projects from "./components/sections/Projects";
 import Contact from "./components/sections/Contact";
+import { showProjects } from "./data/profile";
 
 function App() {
   return (
@@ -21,7 +22,7 @@ function App() {
           <Education />
           <Skills />
           <Certifications />
-          <Projects />
+          {showProjects && <Projects />}
           <Contact />
           <Footer />
         </main>
