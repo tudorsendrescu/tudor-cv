@@ -147,10 +147,13 @@ export const certifications: Certification[] = [
   },
 ];
 
+export type ProjectCategory = "cybersecurity" | "development";
+
 export type Project = {
   title: string;
   description: string;
   tags: string[];
+  category: ProjectCategory;
   href?: string;
   repoHref?: string;
 };
@@ -160,10 +163,12 @@ export const projects: Project[] = [
     title: "Project name — coming soon",
     description: "Content coming soon.",
     tags: ["Tag"],
+    category: "cybersecurity",
   },
   {
     title: "Project name — coming soon",
     description: "Content coming soon.",
     tags: ["Tag"],
+    category: "development",
   },
 ];
