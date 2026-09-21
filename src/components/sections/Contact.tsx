@@ -21,6 +21,11 @@ export default function Contact() {
             <Mail size={16} />
             Say hello
           </a>
+          <p className="mt-4 font-mono text-sm text-slate">
+            <a href={`mailto:${profile.email}`} className="hover:text-accent transition-colors">
+              {profile.email}
+            </a>
+          </p>
         </div>
       </Reveal>
     </section>
