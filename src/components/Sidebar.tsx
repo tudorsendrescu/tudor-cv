@@ -45,19 +45,19 @@ export default function Sidebar() {
               </li>
             ))}
           </ul>
-          <div className="flex gap-5 mt-10">
+          <div className="flex flex-wrap gap-3 mt-10">
             {profile.social.map((s) => {
               const Icon = iconMap[s.icon as keyof typeof iconMap];
               return (
                 <a
                   key={s.label}
                   href={s.href}
-                  aria-label={s.label}
                   target={s.href.startsWith("http") ? "_blank" : undefined}
                   rel="noreferrer"
-                  className="text-slate hover:text-accent transition-colors"
+                  className="inline-flex items-center gap-1.5 px-3 py-2 rounded border border-white/10 text-slate text-sm font-mono uppercase tracking-widest hover:border-accent/40 hover:text-accent hover:bg-accent-dim transition-colors focus-accent"
                 >
-                  <Icon size={22} />
+                  <Icon size={18} />
+                  {s.label}
                 </a>
               );
             })}
@@ -132,19 +132,19 @@ export default function Sidebar() {
             </div>
           )}
 
-          <div className="flex gap-5">
+          <div className="flex flex-wrap gap-3">
             {profile.social.map((s) => {
               const Icon = iconMap[s.icon as keyof typeof iconMap];
               return (
                 <a
                   key={s.label}
                   href={s.href}
-                  aria-label={s.label}
                   target={s.href.startsWith("http") ? "_blank" : undefined}
                   rel="noreferrer"
-                  className="text-slate hover:text-accent hover:-translate-y-1 transition-all focus-accent"
+                  className="inline-flex items-center gap-1.5 px-3 py-2 rounded border border-white/10 text-slate text-xs font-mono uppercase tracking-widest hover:border-accent/40 hover:text-accent hover:bg-accent-dim transition-colors focus-accent"
                 >
-                  <Icon size={20} />
+                  <Icon size={16} />
+                  {s.label}
                 </a>
               );
             })}
