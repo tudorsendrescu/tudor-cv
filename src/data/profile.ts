@@ -30,7 +30,7 @@ export const navLinks = [
 
 export const about = {
   paragraphs: [
-    "Hi there! I'm Tudor, and I'm drawn to the space where building software and breaking it meet. I'm a second-year student in the Faculty of Automatic Control and Computer Science (AIASI) at the University Politehnica of Bucharest, and I care about writing clean, full-stack software while increasingly pulling that focus toward security — understanding how systems fail is what makes me a better engineer.",
+    "Hi there! I'm Tudor, and cybersecurity is where I'm building my career — understanding how systems break is what drives me. I'm a second-year student in the Faculty of Automatic Control and Computer Science at the University Politehnica of Bucharest, and I bring a strong software development background into that work: reading and reasoning about code at an engineering level, which sharpens how I approach security testing from every angle.",
     "I hold the HTB Certified Junior Cybersecurity Associate (CJCA) certification from Hack The Box, a fully hands-on exam with no multiple choice: real penetration testing against an enterprise-style network, SIEM-assisted log analysis in Elastic, and a commercial-grade report at the end. Day to day, that means working with tools like Nmap, Wireshark, and the ELK stack, and I keep building on it through labs and CTFs. My development background feeds directly into this: reading and reasoning about code at an engineering level makes me particularly effective at white-box testing, on top of the black-box and grey-box work most security testing involves.",
     "On the development side, I try to keep that same full-stack range — this site is my own build, and I got hands-on backend and frontend experience volunteering with the IT department of LSAC Bucharest during university.",
     "Away from the screen, I train martial arts (currently Iaido), play piano, draw, and read whenever I get the chance.",
@@ -75,7 +75,7 @@ export type EducationEntry = {
 
 export const education: EducationEntry[] = [
   {
-    degree: "B.Eng., Faculty of Automatic Control and Computer Science — AIASI specialization",
+    degree: "B.Eng., Faculty of Automatic Control and Computer Science",
     institution: "University Politehnica of Bucharest (UNSTPB)",
     period: "Oct 2025 — Present",
     details:
