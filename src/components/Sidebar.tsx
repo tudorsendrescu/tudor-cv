@@ -118,7 +118,8 @@ export default function Sidebar() {
           {profile.resumeUrl ? (
             <a
               href={profile.resumeUrl}
-              download
+              target="_blank"
+              rel="noreferrer"
               className="inline-flex items-center gap-2 mb-8 px-4 py-2.5 rounded border border-accent/40 text-accent text-xs font-mono uppercase tracking-widest hover:bg-accent-dim transition-colors focus-accent"
             >
               <Download size={14} />
