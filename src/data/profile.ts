@@ -6,7 +6,7 @@ export const profile = {
   tagline:
     "I build and secure software — bridging development skills with a growing focus on cybersecurity.",
   email: "vladsitudor@gmail.com",
-  resumeUrl: "", // add the hosted PDF path/URL here once ready, e.g. "/resume.pdf"
+  resumeUrl: "/resume.pdf",
   social: [
     { label: "GitHub", href: "https://github.com/tudorsendrescu", icon: "github" },
     { label: "LinkedIn", href: "https://www.linkedin.com/in/tudor-gabriel-șendrescu-ab0021389/", icon: "linkedin" },
